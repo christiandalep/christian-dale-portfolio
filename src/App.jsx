@@ -1,5 +1,5 @@
 import './index.css';
-import profilePic from './assets/profile.jpg';
+import profilePic from './assets/images/profile.jpg';
 import { experiences } from './data/experiences.js';
 import { projects } from './data/projects.js';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
@@ -47,7 +47,7 @@ export default function App() {
           <h1>Projects</h1>
           <div className="project-grid">
             {projects.map((p, i) => (
-              <ProjectCard key={i} title={p.title} desc={p.desc}/>
+              <ProjectCard key={i} image={p.image ? p.image : ""} title={p.title} desc={p.desc}/>
             ))}
           </div>
         </div>
@@ -72,6 +72,7 @@ export default function App() {
                 <span>christiandalep</span>
               </a>
             </div>
+            <span className="footer-copyright">Christian Dale Pancho &copy; 2025</span>
           </div>
         </div>
       </footer>
