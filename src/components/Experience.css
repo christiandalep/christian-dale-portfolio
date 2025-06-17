@@ -1,0 +1,34 @@
+.exp-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.exp-left {
+  flex: 0 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-line {
+  flex: 1;
+  border-top: 1px dashed var(--text-primary);
+  margin: 0 1rem;
+}
+
+.exp-right {
+  flex: 2;
+}
+
+.exp-company {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.exp-year {
+  font-style: italic;
+}
+
+.exp-position {
+  font-weight: bold;
+}
