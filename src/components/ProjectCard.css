@@ -1,7 +1,15 @@
 .project-card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
+  background-color: var(--bg-secondary);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .project-image {
@@ -14,4 +22,20 @@
 
 .project-title {
   color: var(--accent);
+}
+
+.project-tags span {
+  display: inline-block;
+  background: #2b2b2b;
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+  .project-image {
+    height: 250px;
+  }
 }
