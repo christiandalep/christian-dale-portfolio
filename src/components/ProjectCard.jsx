@@ -1,6 +1,6 @@
 import './ProjectCard.css'
 
-export function ProjectCard({ image, title, desc }) {
+export function ProjectCard({ image, title, desc, tags }) {
   return (
     <>
       <div className="project-card">
@@ -11,7 +11,9 @@ export function ProjectCard({ image, title, desc }) {
           <h3 className="project-title">{title}</h3>
           <p>{desc}</p>
           <div class="project-tags">
-            <span>React</span><span>NodeJS</span>
+            {tags && tags.map((tag) => {
+              return (<span>{tag}</span>);
+            })}
           </div>
         </div>
       </div>
