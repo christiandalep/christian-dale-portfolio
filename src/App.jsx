@@ -45,7 +45,11 @@ export default function App() {
           <h1>Projects</h1>
           <div className="project-grid">
             {projects.map((p, i) => (
-              <ProjectCard key={i} image={p.image ? p.image : ""} title={p.title} desc={p.desc} tags={p.tags && p.tags}/>
+              <ProjectCard key={i} 
+              image={p.image ? p.image : ""} 
+              title={p.title} desc={p.desc} 
+              tags={p.tags && p.tags}
+              repo={p.repo && p.repo}/>
             ))}
           </div>
         </div>
