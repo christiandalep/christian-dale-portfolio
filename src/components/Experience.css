@@ -5,7 +5,6 @@
 }
 
 .exp-left {
-  flex: 0 0 150px;
   display: flex;
   flex-direction: column;
 }
@@ -31,4 +30,19 @@
 
 .exp-position {
   font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .exp-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-left {
+    margin-bottom: 1.5rem;
+  }
+
+  .exp-line {
+    display: none;
+  }
 }
