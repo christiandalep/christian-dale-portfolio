@@ -14,6 +14,7 @@ export default function App() {
           <div className="intro-content">
             <div className="profile">
               <img src={profilePic} alt="Christian Dale Pancho" />
+              <p className="profile-location">Christchurch, NZ</p>
             </div>
             <div className="about">
               <h1>Christian Dale Pancho</h1>

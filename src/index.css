@@ -43,7 +43,7 @@ body {
 }
 
 .profile {
-  text-align: right;
+  text-align: center;
 }
 
 .profile img {
@@ -52,6 +52,12 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+}
+
+.profile-location {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
 }
 
 .about {
